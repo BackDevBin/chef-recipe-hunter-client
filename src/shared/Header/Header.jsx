@@ -5,23 +5,25 @@ import { Button } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <nav className='ms-5 me-5 mt-3 mb-3'>
-            <div className='row align-items-center '>
+        <nav className='bg-dark'>
+            <div className='row align-items-center ms-5 me-5 pt-3 pb-3'>
 
-                <div className='col d-flex align-items-center'>
+                <div className='col d-flex align-items-center text-white'>
                     <img style={{ width: "80px" }} src={chefLogo} alt="" />
                     <h1 className='fw-bolder'><span className='text-danger fs-1'>American</span><span className='fs-3'>Chef</span></h1>
                 </div>
 
-                <div className='col text-center text-black'>
-                    <Link className='text-decoration-none me-3 text-black'>Home</Link>
-                    <Link className='text-decoration-none me-3 text-black'>Blog</Link>
-                    <Link className='text-decoration-none text-black'>log</Link>
+                <div className='col text-center'>
+                    <Link className='text-decoration-none me-3 text-white'>Home</Link>
+                    <Link className='text-decoration-none me-3 text-white'>About Us</Link>
+                    <Link className='text-decoration-none me-3 text-white'>Blog</Link>
+
+                
                     
                 </div>
 
                 <div className='col text-end'>
-                <Button variant="dark">Login</Button>
+                <Button variant="danger">Login</Button>
                 </div>
 
             </div>
