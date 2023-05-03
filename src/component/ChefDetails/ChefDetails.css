@@ -6,6 +6,7 @@
     margin-left: 3rem;
     margin-right: 3rem;
     border-bottom: 1px solid rgb(121, 122, 122);
+    margin-bottom: 5rem;
 
 }
 
@@ -19,4 +20,13 @@
 
 .info-container p{
     margin-bottom: 5px;
+}
+
+.recipe-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
 }
