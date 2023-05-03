@@ -2,6 +2,8 @@ import React from 'react';
 import chefLogo from '../../assets/chef.png'
 
 const Footer = () => {
+
+    
     return (
         <div className="bg-dark">
 

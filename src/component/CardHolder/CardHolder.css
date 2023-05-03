@@ -1,0 +1,9 @@
+.chef-container{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}

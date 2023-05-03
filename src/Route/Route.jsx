@@ -1,21 +1,31 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../component/Home/Home";
+import Main from "../Layout/Main";
+import CardHolder from "../component/CardHolder/CardHolder";
+import ErrorPage from "../component/ErrorPage/ErrorPage";
 
 
 
 const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home></Home>,
+      element: <Main></Main>,
       children: [
         {
           path: "/",
-          element: <h4>route 2</h4>
+          element: <Home></Home>,
+          loader: () => fetch('https://chef-recipe-hunter-server-tishansarker873-gmailcom.vercel.app/chefs')
+          
         },
         {
-          path: "/category",
-          element: <h3>route 1</h3>,
+          path: "/chef",
+          element: <CardHolder></CardHolder>,
           
+          
+        },
+        {
+          path: "*",
+          element: <ErrorPage></ErrorPage>,
         }
       ]
     },

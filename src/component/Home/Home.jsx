@@ -1,14 +1,19 @@
 import React from 'react';
-import Header from '../../shared/Header/Header';
-import Footer from '../../shared/Footer/Footer';
 import Banner from '../Banner/Banner';
+import CardHolder from '../CardHolder/CardHolder';
+import { useLoaderData } from 'react-router-dom';
+import Article from '../Article/Article';
+import Question from '../Question/Question';
 
 const Home = () => {
+    const chefs = useLoaderData();
+    
     return (
         <div>
-            <Header></Header>
             <Banner></Banner>
-            <Footer></Footer>
+            <CardHolder chefs={chefs}></CardHolder>
+            <Article></Article>
+            <Question></Question>
         </div>
     );
 };
