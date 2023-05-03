@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ChefCard from '../ChefCard/ChefCard';
-import './CardHolder.css'
+import './CardHolder.css';
 
 const CardHolder = ({chefs}) => {
 

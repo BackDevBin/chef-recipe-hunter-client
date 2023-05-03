@@ -1,0 +1,22 @@
+.banner-container{
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-bottom: 1px solid rgb(121, 122, 122);
+
+}
+
+.info-container{
+    margin-top: auto;
+}
+
+.chef-img{
+    width: 300px;
+}
+
+.info-container p{
+    margin-bottom: 5px;
+}
