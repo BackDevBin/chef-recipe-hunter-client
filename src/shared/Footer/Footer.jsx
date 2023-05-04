@@ -1,5 +1,6 @@
 import React from 'react';
 import chefLogo from '../../assets/chef.png'
+import './Footer.css'
 
 const Footer = () => {
 
@@ -8,21 +9,21 @@ const Footer = () => {
         <div className="bg-dark">
 
             <div className="container text-start text-white pt-5 pb-5">
-                <div className="row">
-                    <div className="col">
+                <div className="footer-container">
+                    <div>
                         <div>
                             <img style={{ width: "100px" }} src={chefLogo} className="mb-1" alt="" />
                                 <p>Finding Personal Chefs is easy by searching our trusted network of top-rated Personal Chefs.</p>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="show-div">
                         <h5 className="mb-5">Usefull Link</h5>
                         <p>Home</p>
                         <p>About Us</p>
                         <p>Blog</p>
                         <p>Contact Us</p>
                     </div>
-                    <div className="col">
+                    <div className="show-div">
                         <h5 className="mb-5">Contact Now</h5>
                         <p>555 4th 5t NW, America<br/>
                             DC 20530, United State</p>
@@ -30,7 +31,7 @@ const Footer = () => {
                             +88 01750 000 00</p>
                         <p>info@gmail.com</p>
                     </div>
-                    <div className="col">
+                    <div>
                         <h5 className="mb-5">Subscribe</h5>
                         <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
                         <div className="input-group mb-3">

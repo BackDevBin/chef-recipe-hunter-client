@@ -31,8 +31,6 @@ const Header = () => {
                     <Link className='text-decoration-none me-3 text-white'>About Us</Link>
                     <Link to='/blog' className='text-decoration-none me-3 text-white'>Blog</Link>
 
-
-
                 </div>
 
                 <div className='col text-end'>
