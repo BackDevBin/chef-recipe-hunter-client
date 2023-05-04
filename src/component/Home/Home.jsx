@@ -2,8 +2,8 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import CardHolder from '../CardHolder/CardHolder';
 import { useLoaderData } from 'react-router-dom';
-import Article from '../Article/Article';
 import Question from '../Question/Question';
+import Latest from '../Lattest/Latest';
 
 const Home = () => {
     const chefs = useLoaderData();
@@ -12,7 +12,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <CardHolder chefs={chefs}></CardHolder>
-            <Article></Article>
+            <Latest></Latest>
             <Question></Question>
         </div>
     );

@@ -4,7 +4,7 @@ import errorLogo from '../../assets/error.png'
 const ErrorPage = () => {
     return (
         <div >
-            <div className='bg-danger rounded w-75 mx-auto my-5'>
+            <div className='bg-danger rounded w-75 mx-auto my-5 text-white'>
             <div className='p-5 d-flex align-items-center'>
                 <img style={{width:"120px"}} src={errorLogo} alt="" />
                 <div className='ps-3'>

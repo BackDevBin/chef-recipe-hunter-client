@@ -57,7 +57,7 @@ const Register = () => {
                 <form onSubmit={handleSignUpForm}>
                 <div className="form-control">
                         <label htmlFor="password">Name</label>
-                        <input type="text" name="name" id="name" required />
+                        <input type="text" name="name" id="name" />
                     
                     </div>
                     <div className="form-control">
@@ -70,7 +70,7 @@ const Register = () => {
                     </div>
                     <div className="form-control">
                         <label htmlFor="password">Photo Url</label>
-                        <input type="text" name="photo" id="photo" required />
+                        <input type="text" name="photo" id="photo" />
                     
                     </div>
                     <input className='btn-submit' type="submit" value="Register" />

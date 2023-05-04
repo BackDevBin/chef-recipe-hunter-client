@@ -1,5 +1,4 @@
 .banner-container{
-
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 10px;
@@ -27,6 +26,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+}
+
+.Latest-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
     margin-left: 3rem;
     margin-right: 3rem;
     margin-bottom: 5rem;
