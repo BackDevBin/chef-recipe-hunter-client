@@ -1,15 +1,17 @@
 import React, { useContext, useState } from 'react';
 import './Register.css'
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 
 
 const Register = () => {
 
     const [error , setError] = useState('');
+    const [user , setUser] = useState(null);
 
-    const {createUser} = useContext(AuthContext);
+    const {createUser,userUpdateData} = useContext(AuthContext);
 
+   
     const handleSignUpForm = (event) => {
 
         event.preventDefault();
@@ -17,6 +19,9 @@ const Register = () => {
         const form = event.target;
         const email = form.email.value;
         const pass = form.password.value;
+        const name = form.name.value;
+        const photo = form.photo.value;
+       
         
 
         setError('');
@@ -25,13 +30,19 @@ const Register = () => {
         .then(result =>{
             const logUser = result.user;
             form.reset();
+            userUpdateData(logUser,name,photo)
+            .then(() => {
+                
+              }).catch((error) => {
+                console.log(error);
+              });
         })
         .catch(error =>{
-            console.log(error);
+            
             setError(error.message);
         })
 
-
+       
 
 
     }

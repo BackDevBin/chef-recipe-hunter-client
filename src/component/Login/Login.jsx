@@ -13,6 +13,8 @@ const Login = () => {
 
     const {createLogin} = useContext(AuthContext);
 
+    
+
     const navigate = useNavigate();
 
     let location = useLocation();
@@ -31,7 +33,6 @@ const Login = () => {
         createLogin(email, pass)
         .then(result =>{
             const logUser = result.user;
-            console.log(logUser)
             form.reset();
             navigate(from);
         })
