@@ -7,6 +7,7 @@ import ChefDetails from "../component/ChefDetails/ChefDetails";
 import Login from "../component/Login/Login";
 import Register from "../component/Register/Register";
 import Blog from "../component/Blog/Blog";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 
 
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/chef/:id",
-          element: <ChefDetails></ChefDetails>,
+          element: <PrivateRoute><ChefDetails></ChefDetails></PrivateRoute>,
           loader: ({params}) => fetch(`https://chef-recipe-hunter-server-tishansarker873-gmailcom.vercel.app/chefs/${params.id}`)
         },
         {
