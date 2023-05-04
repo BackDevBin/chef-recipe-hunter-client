@@ -11,9 +11,7 @@ const Login = () => {
     const [show , setShow] =useState(false);
     const [error , setError] = useState('');
 
-    const {createLogin} = useContext(AuthContext);
-
-    
+    const {createLogin,GoogleLogin,GithubLogin} = useContext(AuthContext);
 
     const navigate = useNavigate();
 
@@ -43,10 +41,37 @@ const Login = () => {
         
     }
 
+    const loginGoogle = () =>{
+        GoogleLogin()
+        .then(result =>{
+            const logUser = result.user;
+            form.reset();
+            navigate(from);
+        })
+        .catch(error =>{
+            console.log(error);
+            setError(error.message);
+        })
+    }
+
+    const loginGithub = () =>{
+        GithubLogin()
+        .then(result =>{
+            const logUser = result.user;
+            console.log(logUser);
+            form.reset();
+            navigate(from);
+        })
+        .catch(error =>{
+            console.log(error);
+            setError(error.message);
+        })
+    }
+
     return (
         <div>
             <div className='form-container'>
-            <h2 className='form-title'>Login</h2>
+            <h2 className='form-title'>Sign In</h2>
             <form onSubmit={handleLogin} >
                 <div className="form-control">
                     <label htmlFor="email">Email</label>
@@ -69,8 +94,8 @@ const Login = () => {
                     <p>Login With</p>
                 </div>
                 <div className='d-flex justify-content-around mb-3'>
-                <Button variant="outline-danger"><FaGoogle></FaGoogle> Google</Button>
-                <Button variant="outline-danger"><FaGithub></FaGithub> GitHub</Button>
+                <Button onClick={loginGoogle} variant="outline-danger"><FaGoogle></FaGoogle> Google</Button>
+                <Button onClick={loginGithub} variant="outline-danger"><FaGithub></FaGithub> GitHub</Button>
                 </div>
             </div>
 
