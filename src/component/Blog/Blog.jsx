@@ -4,39 +4,42 @@ import './Blog.css'
 const Blog = () => {
     return (
         <div>
-           
-           <div className='matchingNav'>
-            <h3 className='title'>Blogs</h3>
-           </div>
 
-        <div className='blogContainer'>
-
-            <div className='blog'>
-            <h4>When should you use context API?</h4>
-            <p>When avoid passing some props through many levels, then we use context API. 
-When some data needs to be accessible by many components at different nesting levels, then Context is primarily used. 
-When data changes frequently and needs to be updated in many places
-When data is expensive to compute and want to avoid recomputing it every time it’s needed.</p>
+            <div className='matchingNav'>
+                <h3 className='title'>Blogs</h3>
             </div>
 
-            <div className='blog'>
-            <h4>What is a custom hook?</h4>
-            <p>A custom hook always starts with the name ‘use’. It is a special JavaScript function that can be used to call other hooks.It allows to reuse some piece of code in several parts in app. When component logic that needs to be used by multiple components, can extract that logic to a custom Hook. </p>
+            <div className='blogContainer'>
+
+                <div className='blog'>
+                    <h4>Differences between uncontrolled and controlled components ?</h4>
+                    <p>In React, controlled components refer to components whose state and behavior are controlled by the parent component. These components rely on props sent from the parent component to update their state and behavior. Uncontrolled components refer to components that internally manage their own state.</p>
+                </div>
+
+                <div className='blog'>
+                    <h4>How to validate React props using PropTypes ?</h4>
+                    <p>We can use PropTypes to validate any data we are receiving from props. But before using it we will have to import it as always in our app: import PropTypes from 'prop-types'; Below are the validators for the basic data types:</p>
+                    <li>PropTypes.any: The prop can be of any data type</li>
+                    <li>PropTypes.bool: The prop should be a Boolean</li>
+                    <li>PropTypes.number: The prop should be a number</li>
+                    <li>PropTypes.string: The prop should be a string</li>
+                    <li>PropTypes.func: The prop should be a function</li>
+                    <li>PropTypes.array: The prop should be an array</li>
+                </div>
+
+                <div className='blog'>
+                    <h4>Tell us the difference between nodejs and express js?</h4>
+                    <p>NodeJS is the package, which provides the JavaScript run-time environment, whereas Express is a framework that sits on top of NodeJS and helps us to handle requests and responses.Node. js is an open-source and cross-platform that is used to execute JavaScript code outside of a browser. Express. js is used to develop complete web applications such as single-page, multi-page, and hybrid web applications and APIs</p>
+                </div>
+
+
+                <div className='blog'>
+                    <h4>What is a custom hook, and why will you create a custom hook?</h4>
+                    <p>A custom Hook is a JavaScript function whose name starts with ”use” and that may call other Hooks. The main reason to write a custom hook is for code reusability. For example, instead of writing the same code across multiple components that use the same common stateful logic (say a “setState” or localStorage logic), you can put that code inside a custom hook and reuse it.</p>
+                </div>
+
             </div>
 
-            <div className='blog'>
-            <h4>What is useRef?</h4>
-            <p>useRef() is a built-in React hook that accepts an argument as an initial value and returns a reference. UseRef is a hook that allows creating a reference to the DOM element directly in the active element. It can be used to store a mutable value that does not cause re-rendering when updated. It can be used to directly access a DOM element.</p>
-            </div>
-
-
-            <div className='blog'>
-            <h4>What is useMemo?</h4>
-            <p>useMemo is a React Hook that lets you cache the result of a calculation between re-renders.The useMemo() hook accepts two arguments — a function compute that computes a result, and the dependencies array. During initial rendering, useMemo (compute, dependencies) invokes compute, memoizes the calculation result, and returns it to the component.</p>
-            </div>
-
-        </div>
-            
         </div>
     );
 };
