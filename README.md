@@ -24,7 +24,7 @@ To deploy this project run
   npm run build
 ```
 ```bash
-  firebase diploy
+  firebase deploy
 ```
 
 

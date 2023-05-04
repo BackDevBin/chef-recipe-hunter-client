@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import chefLogo from '../../assets/chef.png'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { AuthContext } from '../../component/Provider/AuthProvider';
 import { FaUserCircle } from 'react-icons/fa';
+import './Header.css'
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -27,10 +28,9 @@ const Header = () => {
                 </div>
 
                 <div className='col text-center'>
-                    <Link to='/' className='text-decoration-none me-3 text-white'>Home</Link>
-                    <Link className='text-decoration-none me-3 text-white'>About Us</Link>
-                    <Link to='/blog' className='text-decoration-none me-3 text-white'>Blog</Link>
-
+                    <NavLink to='/' className='text-decoration-none me-3 text-white'>Home</NavLink>
+                    <NavLink to='/blog' className='text-decoration-none me-3 text-white'>Blog</NavLink>
+                    <NavLink to='/register' className='text-decoration-none me-3 text-white'>Register</NavLink>
                 </div>
 
                 <div className='col text-end'>
