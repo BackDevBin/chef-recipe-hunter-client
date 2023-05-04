@@ -50,7 +50,7 @@ const Login = () => {
         })
         .catch(error =>{
             console.log(error);
-            setError(error.message);
+            
         })
     }
 
@@ -64,7 +64,7 @@ const Login = () => {
         })
         .catch(error =>{
             console.log(error);
-            setError(error.message);
+            
         })
     }
 

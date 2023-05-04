@@ -23,9 +23,13 @@ const Register = () => {
         const photo = form.photo.value;
        
         
-
         setError('');
         setSuccess('');
+
+        if(pass < 6 ){
+            setError('Password Must Be Six Characters');
+        }
+
 
         createUser(email,pass)
         .then(result =>{
