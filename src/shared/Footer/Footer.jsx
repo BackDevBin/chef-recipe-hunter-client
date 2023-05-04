@@ -24,7 +24,7 @@ const Footer = () => {
                     </div>
                     <div className="col">
                         <h5 className="mb-5">Contact Now</h5>
-                        <p>555 4th 5t NW, Washington <br/>
+                        <p>555 4th 5t NW, America<br/>
                             DC 20530, United State</p>
                         <p>+88 01750 000 000 <br/>
                             +88 01750 000 00</p>
@@ -34,8 +34,8 @@ const Footer = () => {
                         <h5 className="mb-5">Subscribe</h5>
                         <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
                         <div className="input-group mb-3">
-                            <input type="text" className="form-control" placeholder="Email Address" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                                <button className="btn btn btn-danger rounded" type="button" id="button-addon2"><img style={{ width: "50px" }} src={chefLogo} alt="" /></button>
+                            <input type="text" placeholder="Email Address" className='rounded ps-2' aria-label="Recipient's username" aria-describedby="button-addon2" />
+                                <button className="btn btn btn-danger rounded" type="button" id="button-addon2"><img style={{ width: "40px" }} src={chefLogo} alt="" /></button>
                         </div>
                     </div>
                 </div>

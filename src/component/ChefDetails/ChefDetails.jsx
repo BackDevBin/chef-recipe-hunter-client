@@ -20,6 +20,7 @@ const ChefDetails = () => {
 
     return (
         <div>
+            
             <div className='banner-container'>
                 <div >
                     <img className='chef-img' src={picture} alt="" />

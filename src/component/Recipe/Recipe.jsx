@@ -28,7 +28,7 @@ const Recipe = ({ recipe }) => {
                                 <Toast.Header>
                                     
                                     <strong className="me-auto">{recipe_name}</strong>
-                                    <small>11 mins ago</small>
+                                    
                                 </Toast.Header>
                                 <Toast.Body>Marked as your Favorite Recipe</Toast.Body>
                             </Toast>

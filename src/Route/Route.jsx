@@ -4,6 +4,9 @@ import Main from "../Layout/Main";
 import CardHolder from "../component/CardHolder/CardHolder";
 import ErrorPage from "../component/ErrorPage/ErrorPage";
 import ChefDetails from "../component/ChefDetails/ChefDetails";
+import Login from "../component/Login/Login";
+import Register from "../component/Register/Register";
+import Blog from "../component/Blog/Blog";
 
 
 
@@ -26,7 +29,20 @@ const router = createBrowserRouter([
         {
           path: "*",
           element: <ErrorPage></ErrorPage>,
+        },
+        {
+          path: "/blog",
+          element: <Blog></Blog>,
+        },
+        {
+          path: "/login",
+          element: <Login></Login>,
+        },
+        {
+          path: "/register",
+          element: <Register></Register>,
         }
+
       ]
     },
   ]);

@@ -1,0 +1,15 @@
+.form-container-sn{
+    width: 400px;
+    height: 100%;
+    margin: 20px auto;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 10px rgb(250, 74, 30);
+}
+
+.error-text{
+    color: rgb(250, 30, 30);
+    margin: 10px auto;
+}
