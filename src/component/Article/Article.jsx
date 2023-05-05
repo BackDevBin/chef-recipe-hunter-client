@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
+import LazyLoad from 'react-lazy-load';
 
 const Article = ({ recipe }) => {
 
@@ -7,7 +8,9 @@ const Article = ({ recipe }) => {
 
     return (
         <Card className="bg-dark text-light">
+            <LazyLoad>
             <Card.Img className='h-100 opacity-50' src={recipe_pic} alt="Card image" />
+            </LazyLoad>
             <Card.ImgOverlay>
                 <Card.Title>{recipe_name}</Card.Title>
                 <Card.Text>

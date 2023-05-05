@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Toast } from 'react-bootstrap';
+import LazyLoad from 'react-lazy-load';
 
 const Recipe = ({ recipe }) => {
 
@@ -18,6 +19,7 @@ const Recipe = ({ recipe }) => {
     return (
         <div>
             <div className="card mb-3 w-100 h-100">
+             
                 <img className="card-img-top h-100" src={recipe_pic} alt="Card image cap" />
                 <div className="card-body">
                     <h5 className="card-title">{recipe_name}</h5>
