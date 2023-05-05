@@ -45,7 +45,6 @@ const Login = () => {
         GoogleLogin()
         .then(result =>{
             const logUser = result.user;
-            form.reset();
             navigate(from);
         })
         .catch(error =>{
@@ -58,8 +57,6 @@ const Login = () => {
         GithubLogin()
         .then(result =>{
             const logUser = result.user;
-            console.log(logUser);
-            form.reset();
             navigate(from);
         })
         .catch(error =>{

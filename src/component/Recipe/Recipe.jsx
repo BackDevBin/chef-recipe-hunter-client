@@ -4,7 +4,12 @@ import { Button, Toast } from 'react-bootstrap';
 const Recipe = ({ recipe }) => {
 
     const [show, setShow] = useState(false);
-    const toggleShowA = () => setShow(!show);
+    const [showBtn, setShowBtn] = useState(false);
+    const toggleShowA = () => {
+        setShow(!show);
+        setShowBtn(!showBtn);
+    }
+        
 
 
     const { rating, cookingMethod, recipe_id, recipe_name, recipe_pic, ingredients } = recipe;
@@ -23,7 +28,7 @@ const Recipe = ({ recipe }) => {
                     <div className='d-flex justify-content-between'>
                         <p className="card-text"><small className="text-muted">Rating: {rating} Star</small></p>
                         <div>
-                            <Button onClick={toggleShowA} variant="danger" >Favorite</Button>
+                            <Button onClick={toggleShowA} variant="danger" disabled={showBtn}>Favorite</Button>
                             <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
                                 <Toast.Header>
                                     

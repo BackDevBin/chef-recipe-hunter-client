@@ -25,22 +25,12 @@ const AuthProvider = ({children}) => {
     }
 
     const logOut = () =>{
+        
         return signOut(auth);
     }
 
-    useEffect(() =>{
-      const unsubscribe = onAuthStateChanged( auth, currentUser =>{
-            setUser(currentUser);
-            setLoader(false);
-        })
-
-        return () =>{
-            return unsubscribe();
-        }
-    },[])
-
     const userUpdateData =(logUser, name,photo) =>{
-        console.log(photo);
+        
         return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photo
@@ -48,12 +38,25 @@ const AuthProvider = ({children}) => {
     }
 
     const GoogleLogin = () =>{
+        
         return signInWithPopup(auth,googleProvider)
     }
 
     const GithubLogin = () =>{
+        
         return signInWithPopup(auth,gitProvider)
     }
+
+    useEffect(() =>{
+        const unsubscribe = onAuthStateChanged( auth, currentUser =>{
+              setUser(currentUser);
+              setLoader(false);
+          })
+  
+          return () =>{
+              return unsubscribe();
+          }
+      },[])
 
     const authInfo ={
         user,
