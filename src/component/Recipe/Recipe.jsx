@@ -20,7 +20,10 @@ const Recipe = ({ recipe }) => {
         <div>
             <div className="card mb-3 w-100 h-100">
              
-                <img className="card-img-top h-100" src={recipe_pic} alt="Card image cap" />
+             <LazyLoad>
+             <img style={{height:"400px"}} className="card-img-top" src={recipe_pic} alt="Card image cap" />
+             </LazyLoad>
+               
                 <div className="card-body">
                     <h5 className="card-title">{recipe_name}</h5>
                     <p className="card-text"><span>Cooking Method: </span>{cookingMethod}</p>
