@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './ChefDetails.css';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Recipe from '../Recipe/Recipe';
+import { FaHeart } from 'react-icons/fa';
 
 const ChefDetails = () => {
     const [recipes, setRecipes] = useState([]);
@@ -29,7 +30,7 @@ const ChefDetails = () => {
                     <h4>{name}</h4>
                     <p>Total Recipe: {numberOfRecipes}</p>
                     <p>Experience: {yearsOfExperience}+ Year</p>
-                    <p>Instagram: {likes} people</p>
+                    <p>Instagram: <FaHeart className='text-danger'></FaHeart> {likes} people</p>
                     <p><span className='fs-5'>About {name}:</span> {bio}</p>
                 </div>
             </div>

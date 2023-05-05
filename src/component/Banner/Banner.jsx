@@ -14,8 +14,8 @@ const Banner = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Measuring in a Professional Setting</h3>
-            <p>Of course, in your personal home kitchen, you can experiment much more with cooking or baking on a whim than you could in someone else’s kitchen. For many chefs who work in restaurants, their home kitchen is where they get to scratch that itch to try new culinary creations. But it still takes experience and trial-and-error to do effectively.</p>
+          <h3>British shakshuka</h3>
+            <p>This British shakshuka is fun! It’s the full English – sausages, bacon, mushrooms, tomatoes, beans and eggs – all cooked in one pan. And if you like a bit of brown sauce with your brekkie, it’s used to glaze the sausages and give a subtle tang to the tomato sauce..</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -26,8 +26,10 @@ const Banner = () => {
           />
   
           <Carousel.Caption>
-            <h3>British shakshuka</h3>
-            <p>This British shakshuka is fun! It’s the full English – sausages, bacon, mushrooms, tomatoes, beans and eggs – all cooked in one pan. And if you like a bit of brown sauce with your brekkie, it’s used to glaze the sausages and give a subtle tang to the tomato sauce..</p>
+          <h3>Baked eggs three ways</h3>
+            <p>
+            These easy baked eggs take only minutes to assemble – perfect for Sunday brunches, solo lunches or even lazy suppers. They’re also easily scaled up if you’re feeding a crowd – much less work than poaching or frying dozens of eggs!
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -38,10 +40,8 @@ const Banner = () => {
           />
   
           <Carousel.Caption>
-            <h3>Baked eggs three ways</h3>
-            <p>
-            These easy baked eggs take only minutes to assemble – perfect for Sunday brunches, solo lunches or even lazy suppers. They’re also easily scaled up if you’re feeding a crowd – much less work than poaching or frying dozens of eggs!
-            </p>
+          <h3>Measuring in a Professional Setting</h3>
+            <p>Of course, in your personal home kitchen, you can experiment much more with cooking or baking on a whim than you could in someone else’s kitchen. For many chefs who work in restaurants, their home kitchen is where they get to scratch that itch to try new culinary creations. But it still takes experience and trial-and-error to do effectively.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
